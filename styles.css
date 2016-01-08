@@ -1,0 +1,48 @@
+* {
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html,
+body {
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.notif {
+  display: inline-block;
+  height: 160px;
+  max-width: 730px;
+}
+
+.notif-top {
+  -webkit-app-region: drag;
+  background-color: rgba(0,0,0,0.75);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.5rem;
+  height: 40px;
+  padding: 6px;
+}
+
+.notif-body {
+  background-color: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 2.6rem;
+  height: 120px;
+  padding: 8px 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notif-top,
+.notif-body span {
+  display: block;
+  padding-right: 120px;
+}
+
+.notif-body span:first-child { margin-bottom: .4rem; }

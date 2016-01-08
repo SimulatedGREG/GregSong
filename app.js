@@ -1,4 +1,5 @@
-var fs = require('fs');
+var fs = require('fs'),
+  $ = require('jquery');
 
 /**
  * Create base object and define global variables.
@@ -62,8 +63,8 @@ GregSong.analyze = function(data) {
     };
   }
 
-  if(this.status.action === 'playing'){
-		GregSong.notify();}
+  if(this.status.action === 'playing')
+		GregSong.notify();
 };
 
 /**
@@ -71,7 +72,12 @@ GregSong.analyze = function(data) {
  * TODO: Connect with DOM.
  */
 GregSong.notify = function() {
-  console.log('hello DOM');
+  var cache = $('.notif');
+
+  cache.find('.notif-title').text(this.status.title);
+  cache.find('.notif-artist').text(this.status.artist);
+
+
 };
 
 GregSong._init();
