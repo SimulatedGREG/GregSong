@@ -1,29 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "gregsong",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron main.js"
-  },
+  "description": "minimal screen overlay to show current song playing from text file",
+  "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
-  },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
-  },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
-  "devDependencies": {
-    "electron-prebuilt": "^0.36.0"
+    "url": "git+https://github.com/simulatedgreg/gregsong.git"
   },
   "dependencies": {
     "jquery": "^2.2.0"

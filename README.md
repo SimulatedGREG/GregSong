@@ -7,12 +7,16 @@ How it works
 GregSong was originally created to be used with [foobar2000](https://www.foobar2000.org), but has been build to support a dynamic text file that is updated with the current song information by the media player. GregSong will watch for file changes and notify the overlay accordingly.
 
 ### File Format
-There are 3 basic states that GregSong looks for in the text file, playing, paused, and stopped. There is no plan to customize this format at the moment, but may be reconsidered in the future.
+There are 2 basic states that GregSong looks for in the text file, playing and stopped. There is no plan to customize this format at the moment, but may be reconsidered in the future.
 
 ```
-playing: Rick Astley - Never Gonna Give You Up
-paused: Darude - Sandstorm
+playing: <Artist> - <Song Name>
 stopped
+```
+
+Example
+```
+playing: Rick Astley - Never Gonna Give You Up
 ```
 ### Setup
 
