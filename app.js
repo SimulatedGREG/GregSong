@@ -65,13 +65,10 @@ GregSong.analyze = function(data) {
  */
 GregSong.notify = function() {
   var notif = $('.notif');
+  notif.animate({ marginLeft: '-=100%', opacity: '0' }, 1200, 'swing');
   notif.find('.notif-title').text(this.status.title);
   notif.find('.notif-artist').text(this.status.artist);
-
-  notif
-    .animate({ marginLeft: '0px', opacity: '1' }, 2000, 'swing')
-    .delay(2000)
-    .animate({ marginLeft: '-=100%', opacity: '0' }, 2000, 'swing');
+  notif.animate({ marginLeft: '0px', opacity: '1' }, 1200, 'swing');
 };
 
 GregSong._init();

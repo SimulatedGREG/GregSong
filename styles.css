@@ -20,7 +20,7 @@ h4 { background-color: #000; }
 .notif {
   display: inline-block;
   height: 160px;
-  margin-left: -100%;
+  margin-left: 0;
   max-width: 730px;
   opacity: 0;
 }
